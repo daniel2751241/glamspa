@@ -1,0 +1,26 @@
+{% load render_bundle from webpack_loader %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Glam Spa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% render_bundle 'main' 'css' %}
+    {% block styles %}
+    {% endblock styles %}
+  </head>
+  <body>
+    <div id="app">
+      {% include 'partials/navbar.html' %}
+      {% block content %} {% endblock %} 
+      {% include 'partials/footer.html' %}
+    </div>
+    <a style=" position: fixed; width: 80px; bottom: 5%; z-index: 500; right: 10px" href="https://wa.me/573505610150?text=Hola%2C%20quiero%20mas%20informaci%C3%B3n" class=""><img style="max-width: 128px;" src="{% static 'images/whats.svg' %}" alt="Whatsapp"></a>
+    {% render_bundle 'main' 'js' %}
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    {% block scripts %} {% endblock %}
+  </body>
+</html>
+

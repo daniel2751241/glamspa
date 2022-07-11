@@ -1,0 +1,78 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block styles %}
+ <style>
+.content h1.title {
+    font-family: 'GothamPro';
+}
+.content p, .content ul, .content ol {
+  font-family: 'OpenSansRegular';
+}
+ </style>
+{% endblock styles %}
+{% block content %}
+<swiper :options="swiperOptions" style="height: 100%" class="slide">
+<swiper-slide>
+  <img src="{% static 'images/slides/index/slide_1.jpg' %}" alt="Image"
+  style="" class="image">
+</swiper-slide>
+<swiper-slide>
+  <img src="{% static 'images/slides/index/slide_6.jpg' %}" alt="Image" style="" class="image">
+</swiper-slide>
+
+</swiper-slide>
+</swiper>
+
+<section class="hero has-background-primary" style="">
+  <div class="hero-body" style="background: url({% static 'images/corona.svg' %}) no-repeat">
+    <div class="container">
+      <solicitar-cita></solicitar-cita> 
+    </div>
+  </div>
+</section>
+<div class="">
+  <div class="columns is-gapless">
+    <div class="column has-bg-pink" style="position: relative;">
+      <h1 style="font-size: 4rem; line-height: 1;" class="rotated is-gothampro
+        has-text-centered">Spa de manos</h1>
+    </div>
+    <div class="column is-5">
+
+      <img src="{% static 'images/servicios/individual/principal_spa_de_manos.jpg' %}"
+      alt="Cejas" class="image" style="width: 100%;">
+    </div>
+    <div class="column has-bg-gradient">
+
+    </div>
+  </div>
+</div>
+<div class="section">
+<div class="container">
+    <div class="columns">
+      <div class="column content">
+        {% block image %}
+          
+        <img class="image" src="{% static 'images/servicios/cejas/1.jpg' %}"
+        alt="Cejas">
+        {% endblock image %}
+        {% block text %}
+          
+        {% endblock text %}
+      </div>
+      <div class="column">
+      <nav class="panel panel-1">
+        <p class="panel-heading">Escoge un tratamiento</p>
+        <div class="panel-block">
+          <aside class="menu" style="width: 100%;">
+            <ul class="menu-list">
+<ul><li><a href="/servicios/manicure-chocolaterapia">Chocolaterapia</a></li> <li><a href="/servicios/manicure-parafina">Parafina</a></li> <li><a href="/servicios/manicure-vitamina-e">Vitamina E</a></li> <li><a href="/servicios/manicure-aromaterapia">Aromaterapia</a></li> <li><a href="/servicios/manicure-veloterapia">Veloterapia</a></li></ul>
+            </ul>
+          </aside>
+        </div>
+      </nav>
+      <solicitar-citaya></solicitar-citaya>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

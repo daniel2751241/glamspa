@@ -1,0 +1,129 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block content %}
+<swiper :options="swiperOptions" style="height: 100%;"
+class="slide">
+<swiper-slide>
+  <img src="{% static 'images/slides/index/slide_1.jpg' %}" alt="Image"
+  style="" class="image">
+</swiper-slide>
+<swiper-slide>
+  <img src="{% static 'images/slides/index/slide_6.jpg' %}" alt="Image" style="" class="image">
+</swiper-slide>
+
+</swiper-slide>
+</swiper> 
+
+<section class="hero has-background-primary is-hidden-mobile" style="">
+  <div class="hero-body" style="background: url({% static 'images/corona.svg' %}) no-repeat">
+    <div class="container">
+      <solicitar-cita></solicitar-cita> 
+    </div>
+  </div>
+</section>
+<div class="columns content is-gapless is-multiline is-sans-semibold"
+  style="margin-bottom: 0">
+  <div class="card column is-4 has-bg-lightyellow">
+    <div class="card-image">
+      <img src="{% static 'images/index/servi_1.jpg' %}" alt="Placeholder image">
+    </div>
+    <div class="card-content has-text-centered">
+
+      <a href="/servicios/diseno-de-cejas-con-cera"><h1 class="title is-size-2" style="margin-left: 0.5em;">Cejas</h1></a>
+    </div>
+  </div>
+  <div class="card column is-4 has-bg-pink">
+    <div class="card-image">
+      <img src="{% static 'images/index/servi_2.jpg' %}" alt="Placeholder image">
+    </div>
+    <div class="card-content has-text-centered">
+
+      <a href="/servicios/lifting-pestanas"><h1 class="title is-size-2" style="margin-left: 0.5em;">Pestañas</h1></a>
+    </div>
+  </div>
+  <div class="card column is-4 has-bg-lightblue">
+    <div class="card-image">
+      <img src="{% static 'images/index/servi_3.jpg' %}" alt="Placeholder image">
+    </div>
+    <div class="card-content has-text-centered">
+
+      <a href="/servicios/rostro-completo-cera"><h1 class="title is-size-2" style="margin-left: 0.5em;">Depilación
+          Facial </h1></a>
+    </div>
+  </div>
+  <!-- 2nd row -->
+  <div class="card column is-4 has-bg-lightblue">
+    <div class="card-image">
+      <img src="{% static 'images/index/servi_4.jpg' %}" alt="Placeholder image">
+    </div>
+    <div class="card-content has-text-centered">
+      <a href="/servicios/depilacion-corporal"><h1 class="title is-size-2" style="margin-left: 0.5em;">Depilación
+        Corporal </h1></a>
+    </div>
+  </div>
+  <div class="card column is-4 has-bg-lightyellow">
+    <div class="card-image">
+      <img src="{% static 'images/index/servi_5.jpg' %}" alt="Placeholder image">
+    </div>
+    <div class="card-content has-text-centered">
+
+      <a href="/servicios/manicure-tradicional"><h1 class="title is-size-2" style="margin-left: 0.5em;">Manicure</h1></a>
+    </div>
+  </div>
+  <div class="card column is-4 has-bg-pink">
+    <div class="card-image">
+      <img src="{% static 'images/index/servi_6.jpg' %}" alt="Placeholder image">
+    </div>
+    <div class="card-content has-text-centered">
+
+      <a href="/servicios/pedicure-tradicional"><h1 class="title is-size-2" style="margin-left: 0.5em;">Pedicure</h1></a>
+    </div>
+  </div>
+  <!-- Third row -->
+  <div class="card column is-4 has-bg-pink">
+    <div class="card-image">
+      <img src="{% static 'images/index/servi_7.jpg' %}" alt="Placeholder image">
+    </div>
+    <div class="card-content has-text-centered">
+
+      <a href="/servicios/manicure-chocolaterapia"><h1 class="title is-size-2" style="margin-left: 0.5em;">Spa de
+          Manos</h1></a>
+    </div>
+  </div>
+  <div class="card column is-4 has-bg-lightblue">
+    <div class="card-image">
+      <img src="{% static 'images/index/servi_8.jpg' %}" alt="Placeholder image">
+    </div>
+    <div class="card-content has-text-centered">
+      <a href="/servicios/pedicure-chocolaterapia"><h1 class="title is-size-2" style="margin-left: 0.5em;">Spa de Pies</h1></a>
+    </div>
+  </div>
+  <div class="card column is-4 has-bg-lightyellow">
+    <div class="card-image">
+      <img src="{% static 'images/index/servi_9.jpg' %}" alt="Placeholder image">
+    </div>
+    <div class="card-content has-text-centered">
+
+      <a href="/seminarios/micropigmentacion-completa"><h1 class="title is-size-2" style="margin-left:
+      0.5em;">Seminarios</h1></a>
+    </div>
+  </div>
+</div>
+<div>
+<section class="hero has-background-primary is-hidden-desktop" style="">
+  <div class="hero-body" style="background: url({% static 'images/corona.svg' %}) no-repeat">
+    <div class="container">
+      <solicitar-cita></solicitar-cita> 
+    </div>
+  </div>
+</section>
+
+<img class="image" src="{% static 'images/index/glam_1.jpg' %}" alt="">
+</div>
+{% endblock content %}
+
+{% block scripts %}
+  <script>
+  </script>
+{% endblock scripts %}

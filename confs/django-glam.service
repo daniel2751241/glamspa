@@ -1,0 +1,13 @@
+[Unit]
+Description=Glam Web Application
+After=network.target
+
+[Service]
+ExecStart=/home/glamspa/.poetry/bin/poetry run uwsgi --ini uwsgi.ini
+WorkingDirectory=/home/glamspa/repositories/glam
+User=glamspa
+Group=glamspa
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,129 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block styles %}
+ <style>
+.content h1.title {
+    font-family: 'GothamPro';
+}
+.content p, .content ul, .content ol {
+  font-family: 'OpenSansRegular';
+}
+.content ul.menu-list {
+    list-style: none;
+     margin-left: 0; 
+     margin-top: 0;
+      }
+.content p.panel-heading {
+  margin-bottom: 0
+}
+ </style>
+{% endblock styles %}
+{% block content %}
+<swiper :options="swiperOptions" style="height: 100%">
+<swiper-slide>
+  <img src="{% static 'images/slides/index/slide_1.jpg' %}" alt="Image"
+  style="width: 100%; height: 500px" class="image">
+</swiper-slide>
+<swiper-slide>
+  <img src="{% static 'images/slides/index/slide_6.jpg' %}" alt="Image" style="width: 100%; height: 500px" class="image">
+</swiper-slide>
+
+</swiper-slide>
+</swiper>
+
+<section class="hero has-background-primary" style="">
+  <div class="hero-body" style="background: url({% static 'images/corona.svg' %}) no-repeat">
+    <div class="container">
+      <solicitar-cita></solicitar-cita> 
+    </div>
+  </div>
+</section>
+<div class="">
+  <div class="columns is-gapless">
+    <div class="column has-bg-pink" style="position: relative;">
+      <h1 style="font-size: 4.5rem;" class="rotated is-gothampro
+        has-text-centered">Seminarios</h1>
+    </div>
+    <div class="column is-6">
+
+      <img src="{% static 'images/servicios/individual/principal_cejas.jpg' %}"
+      alt="Cejas" class="image" style="width: 100%;">
+    </div>
+    <div class="column has-bg-gradient">
+
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="columns content">
+      <div class="column">
+        <p class="subtitle">Diseño de cejas</p>
+        <p class="subtitle has-text-weight-bold	">Es una capacitación teórico-practico donde aprenderás a trabajar las
+cejas diseñando, depilando con cera o hilo (técnica hindú) y manejo de
+pigmentos semipermanentes.
+          </p>
+        <p class="subtitle has-text-weight-bold">El primer día</p>
+        <ul>
+          <li>Entrega de guias</li>
+          <li>Introducción y profundización en visagismo</li>
+          <li>Diseño de cejas</li>
+          <li>Práctica y manejo de elementos</li>
+          <li>Práctica de dibujo</li>
+          <li>Manejo de pigmentos</li>
+        </ul>
+        <p class="subtitle has-text-weight-bold">Segundo dia</p>
+        <ul>
+          <li>Manejo de cera en temperaturas y contexturas</li>
+          <li>Manejo de hilo</li>
+          <li>Manejo de pigmentos</li>
+          <li>Práctica sobre modelos humanas</li>
+          <li>Utilización de pigmentos</li>
+        </ul>
+      </div>
+      <div class="column">
+        <nav class="panel panel-1">
+          <p class="panel-heading">Escoge un tratamiento</p>
+          <div class="panel-block">
+            <aside class="menu" style="width: 100%;">
+              <ul class="menu-list">
+                <li><a href="/seminarios/micropigmentacion-completa">MICROPIGMENTACION COMPLETA</a></li>
+                <li><a href="/seminarios/microblading">MICROBLADING</a></li>
+                <li><a href="/seminarios/diseno-de-cejas">DISEÑO DE CEJAS </a></li>
+                <li><a href="/seminarios/lifting-de-pestanas">LIFTING DE PESTAÑAS</a></li>
+              </ul>
+            </aside>
+          </div>
+        </nav>
+        <p class="subtitle has-text-weight-bold">El curso incluye kit de iniciación en el cuál encontrarás:</p>
+        <ul>
+          <li>Neceser</li>
+          <li>Pigmento</li>
+          <li>Tijeras</li>
+          <li>Activador</li>
+          <li>Alcohol</li>
+          <li>Aceite</li>
+          <li>hilo hindú</li>
+          <li>Brocha</li>
+          <li>Pincel</li>
+          <li>Cepillos</li>
+          <li>Palos de naranjo</li>
+          <li>Lienzo en medidas</li>
+          <li>Cera mini</li>
+          <li>Aloe Vera</li>
+          <li>Hojillas</li>
+          <li>Depilador</li>
+          <li>Entre otros</li> 
+        </ul>
+
+        <p class="subtitle has-text-weight-bold">VALOR DE LA INVERSIÓN *”400.000”*
+Puedes apartar tu cupo con el 20% del valor total del curso.</p>
+        <p class="has-text-justified">El curso es personalizado, tu escoges fecha dos días seguidos y puedes escoger
+horario de 9 am a 2 pm o 12m a 5 pm, los dos días, té entregamos certificado
+de asistencia, break con café y golosina, guías y kit completo.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

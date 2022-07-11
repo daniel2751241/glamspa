@@ -1,0 +1,119 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" /> 
+{% endblock styles %}
+
+{% block content %}
+<div class="section">
+  <div class="container">
+    <h1 class="title is-size-1 has-text-centered">Nuestras sedes</h1>
+
+    <h1 class="title is-size-2 has-text-centered">Modelia</h1>
+    <div class="columns is-multiline">
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/mod_1.png' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/mod_1.png' %}" alt="">
+        </a>
+      </div>
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/mod_2.png' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/mod_2.png' %}" alt="">
+        </a>
+      </div>
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/mod_3.png' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/mod_3.png' %}" alt="">
+        </a>
+      </div>
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/mod_4.png' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/mod_4.png' %}" alt="">
+        </a>
+      </div>
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/mod_5.png' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/mod_5.png' %}" alt="">
+        </a>
+      </div>
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/mod_6.png' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/mod_6.png' %}" alt="">
+        </a>
+      </div>
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/mod_7.png' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/mod_7.png' %}" alt="">
+        </a>
+      </div>
+    </div> 
+
+    <hr>
+
+    <h1 class="title is-size-2 has-text-centered">Chicó</h1>
+    <div class="columns is-multiline">
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/chic_1.jpg' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/chic_1.jpg' %}" alt="">
+        </a>
+      </div>
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/chic_2.png' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/chic_2.png' %}" alt="">
+        </a>
+      </div>
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/chic_3.png' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/chic_3.png' %}" alt="">
+        </a>
+      </div>
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/chic_4.png' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/chic_4.png' %}" alt="">
+        </a>
+      </div>
+    </div>    
+
+        <hr>
+
+    <h1 class="title is-size-2 has-text-centered">Restrepo</h1>
+    <div class="columns is-multiline">
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/res_1.jpg' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/res_1.jpg' %}" alt="">
+        </a>
+      </div>
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/res_2.jpg' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/res_2.jpg' %}" alt="">
+        </a>
+      </div>
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/res_3.jpg' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/res_3.jpg' %}" alt="">
+        </a>
+      </div>
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/res_4.png' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/res_4.png' %}" alt="">
+        </a>
+      </div>
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/res_5.jpg' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/res_5.jpg' %}" alt="">
+        </a>
+      </div>
+      <div class="column is-6">
+        <a href="{% static 'images/sedes/res_6.jpg' %}" data-lightbox="mode">
+          <img src="{% static 'images/sedes/res_6.jpg' %}" alt="">
+        </a>
+      </div>
+    </div>  
+
+  </div>
+</div>
+{% endblock content %}
+
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+{% endblock scripts %}
