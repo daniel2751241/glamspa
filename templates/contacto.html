@@ -1,0 +1,197 @@
+{% extends 'layouts/base.html' %}
+
+{% block title%}Contáctanos{% endblock %}
+
+{% block content %}
+<div class="google-map" style="height: 500px;"></div>
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column is-5 contacto">
+
+        <h1 class="title is-size-2" >Modelia</h1>
+        <ul class="">
+        <li>
+          <li>
+            <a href="https://www.google.com/maps/@4.6654938,-74.1275231,18z">
+              <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+              Carrera 82 #22a -58 segundo piso
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/573505610150?text=Hola,%20buenos%20días%20estoy%20interesado(a)%20en%20contactarlos ">
+              <span class="icon">
+                <i class="fab fa-whatsapp"></i>
+              </span>
+              + 57 3505610150</a>
+          </li>
+          <li>
+            <a href="tel:+573505610150">
+              <span class="icon">
+                <i class="fas fa-phone"></i>
+              </span>
+              + 57 3505610150</a>
+          </li>
+          <li>
+            <a href="mailto:cejasspabogota@gmail.com">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              cejasspabogota@gmail.com</a>
+          </li>
+      </ul>
+        <h1 class="title is-size-2" style="margin-top: 1em;">Chicó</h1>
+        <ul class="">
+          <li>
+            <a href="https://www.google.com/maps/@4.664934,-74.0579974,18.87z">
+              <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+              Carrera 15 #78-02 Local 202
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/573505610150?text=Hola,%20buenos%20días%20estoy%20interesado(a)%20en%20contactarlos">
+              <span class="icon">
+                <i class="fab fa-whatsapp"></i>
+              </span>
+              +57 3505610150</a>
+          </li>
+          <li>
+            <a href="tel:+573505610150">
+              <span class="icon">
+                <i class="fas fa-phone"></i>
+              </span>
+              +57 3505610150</a>
+          </li>
+          <li>
+            <a href="mailto:cejasspabogota@gmail.com">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              cejasspabogota@gmail.com</a>
+          </li>
+
+        </ul>  
+        <br><br>
+        <h1 class="title is-size-2" >Restrepo</h1>
+        <ul class="">
+        <li>
+          <li>
+            <a href="https://www.google.com/maps/@4.5874918,-74.1061863,17z">
+              <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+              Carrera 24 #16-39 Sur Piso 2
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/573505610150?text=Hola,%20buenos%20días%20estoy%20interesado(a)%20en%20contactarlos ">
+              <span class="icon">
+                <i class="fab fa-whatsapp"></i>
+              </span>
+              + 57 3505610150</a>
+          </li>
+          <li>
+            <a href="tel:+573505610150">
+              <span class="icon">
+                <i class="fas fa-phone"></i>
+              </span>
+              + 57 3505610150</a>
+          </li>
+          <li>
+            <a href="mailto:cejasspabogota@gmail.com">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              cejasspabogota@gmail.com</a>
+          </li>
+      </ul>     
+      <ul class="is-size-4" style="margin-top: 2em;">
+        <li>
+          <a href="https://facebook.com/glamspabogota">
+            <span class="icon" style="vertical-align: sub;">
+              <i class="fab fa-facebook"></i>
+            </span>
+            @GlamSpaBogota
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/glamspabogota">
+            <span class="icon" style="vertical-align: sub;">
+              <i class="fab fa-instagram"></i>
+            </span>
+            @GlamSpaBogota
+          </a>
+        </li>
+      </ul>
+      </div>
+      <div class="column is-6">
+        <form action="#">
+          <div class="field">
+            <div class="control">
+              <input type="text" name="name" placeholder="Nombre" required
+                                             class="input">
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input type="text" name="email" placeholder="E-mail" required
+                                              class="input">
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input type="phone" name="email" placeholder="Teléfono" required
+                                               class="input">
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <textarea name="message" class="textarea"
+                                       placeholder="Mensaje" required></textarea>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <button class="button is-dark" type="submit">Enviar</button>
+            </div>
+          </div>
+        </form>
+        {% comment %}
+        <p style="margin-top: 1em;">Para quejas, reclamos o sugerencias escríbenos a 
+          <a href="mailto:cejasspabog@gmail.com">cejasspabog@gmail.com</a>
+        </p>
+        <p>Para trabajar con nosotros, escríbenos a<br>
+          <a href="mailto:cejasspabog@gmail.com">cejasspabog@gmail.com</a>
+        </p>
+        {% endcomment %}
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<div class="parallax" style="background-image: url({{url_for('static',
+filename='images/contactanos/parallax.jpg')}}) "></div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4ZVJTYIOiktylUJqlnm9RH3t5Vovtspg" ></script>
+<script>
+  let center = {
+    lat: 4.6644622,
+    lng: -74.0601531,
+  }
+  let markerCoordinates = [
+    {lat: 4.6655556, long:-74.1278708, t: 'Sede'},
+    {lat: 4.664442, long: -74.058251, t: 'Sede principal'},
+    {lat: 4.587512065174086, long: -74.10180446461935, t:'Sede Restrepo'},
+  ]
+  let element = document.querySelector('.google-map')
+  const options = {
+    zoom: 12,
+    center: new google.maps.LatLng(center.lat, center.lng),
+  }
+  const map = new google.maps.Map(element, options);
+  markerCoordinates.forEach((coord) => {
+    let position = new google.maps.LatLng(coord.lat, coord.long);
+    let marker = new google.maps.Marker({
+      position,
+      map,
+      title: coord.t
+    });
+  });
+
+</script>
+{% endblock scripts %}

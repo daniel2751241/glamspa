@@ -1,0 +1,42 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="section">
+  <div class="container content">
+    <div class="columns">
+      <div class="column">
+        <p class="subtitle is-futura-medium">Misión</p>
+        <p class="has-text-justified is-futura-light">Glam Spa es una empresa prestadora de servicios de
+          belleza, especializada en cejas y pestañas y con una gama amplia de
+          servicios para satisfacer la demanda del mercado, nos caracterizamos y
+          diferenciamos por brindar a nuestros clientes zonas amplias, cómodas y
+          hermosamente decoradas para una atención integral, así mismo,
+          profesionales certificados y con una amplia experiencia en cada una de
+          las áreas ofrecidas. </p>
+        <p class="subtitle is-futura-medium">Visión</p>
+        <p class="has-text-justified is-futura-light">Glam Spa en el año 2023 estará posicionada a nivel
+nacional y abriendo campos internacionales brindando los mejores
+servicios de belleza y las ultimas tendencias en todos los campos
+ofrecidos, proyectando un crecimiento amplio para satisfacer las
+demandas en la belleza tanto de mujeres como hombres, mercado que
+viene ganando terreno en el PIB de cada país de forma importante.</p>
+        <p class="subtitle is-futura-medium">Valores</p>
+        <ul class="is-futura-light">
+          <li>Honestidad</li>
+          <li>Responsabilidad</li>
+          <li>Cumplimiento</li>
+          <li>Respeto</li>
+          <li>Amor por nuestro trabajo</li>
+          <li>Profesionalismo</li>
+          <li>Solidaridad</li>
+        </ul>
+      </div>
+      <div class="column">
+      <img class="image" src="{% static 'images/nosotros.jpg' %}" alt="Nosotros">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,109 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block styles %}
+ <style>
+.content h1.title {
+    font-family: 'GothamPro';
+}
+.content p, .content ul, .content ol {
+  font-family: 'OpenSansRegular';
+}
+.content ul.menu-list {
+    list-style: none;
+     margin-left: 0; 
+     margin-top: 0;
+      }
+.content p.panel-heading {
+  margin-bottom: 0
+}
+ </style>
+{% endblock styles %}
+{% block content %}
+<swiper :options="swiperOptions" style="height: 100%">
+<swiper-slide>
+  <img src="{% static 'images/slides/index/slide_1.jpg' %}" alt="Image"
+  style="width: 100%; height: 500px" class="image">
+</swiper-slide>
+<swiper-slide>
+  <img src="{% static 'images/slides/index/slide_6.jpg' %}" alt="Image" style="width: 100%; height: 500px" class="image">
+</swiper-slide>
+
+</swiper-slide>
+</swiper>
+
+<section class="hero has-background-primary" style="">
+  <div class="hero-body" style="background: url({% static 'images/corona.svg' %}) no-repeat">
+    <div class="container">
+      <solicitar-cita></solicitar-cita> 
+    </div>
+  </div>
+</section>
+<div class="">
+  <div class="columns is-gapless">
+    <div class="column has-bg-pink" style="position: relative;">
+      <h1 style="font-size: 4.5rem;" class="rotated is-gothampro
+        has-text-centered">Seminarios</h1>
+    </div>
+    <div class="column is-6">
+
+      <img src="{% static 'images/servicios/individual/principal_cejas.jpg' %}"
+      alt="Cejas" class="image" style="width: 100%;">
+    </div>
+    <div class="column has-bg-gradient">
+
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="columns content">
+      <div class="column">
+        <p class="subtitle">Lifting de pestañas</p>
+        <p class="subtitle has-text-weight-bold	">Curso teórico-práctico de un dia donde aprenderás a ondular las
+pestañas para que luzcan mas largas y hermosas con las últimas
+tendencias</p>
+        <p class="subtitle has-text-weight-bold">Este curso incluye</p>
+        <ul>
+          <li>Guías de trabajo</li>
+          <li>Kit profesional incluye
+            <ol style="margin-left: 0; margin-top: 0;">
+              <li>Neceser</li>
+              <li>Palitos naranjo</li>
+              <li>Producto de realce</li>
+              <li>Neutralizador</li>
+              <li>Colágeno para pestañas</li>
+              <li>Removedor</li>
+              <li>Siliconas tamaño S. M. L</li>
+              <li>Cepillos de pestañas</li>
+              <li>Pigmento de pestañas</li>
+              <li> Toallin, entre otros</li>
+            </ol>
+            <li>Prácticas en modelos humanas</li>
+        </ul>
+      </div>
+      <div class="column">
+        <nav class="panel panel-1">
+          <p class="panel-heading">Escoge un tratamiento</p>
+          <div class="panel-block">
+            <aside class="menu" style="width: 100%;">
+              <ul class="menu-list">
+                <li><a href="/seminarios/micropigmentacion-completa">MICROPIGMENTACION COMPLETA</a></li>
+                <li><a href="/seminarios/microblading">MICROBLADING</a></li>
+                <li><a href="/seminarios/diseno-de-cejas">DISEÑO DE CEJAS </a></li>
+                <li><a href="/seminarios/lifting-de-pestanas">LIFTING DE PESTAÑAS</a></li>
+              </ul>
+            </aside>
+          </div>
+        </nav>
+        <p class="subtitle has-text-weight-bold">VALOR DE LA. INVERSIÓN *350.000*, Puedes apartar tu cupo
+con el 20% del valor total del curso.</p>
+
+        <p class="has-text-justified">Los horarios los escoges de 9 am a 2 pm o
+          12 pm a 5 pm, un solo día, te entregamos certificado de asistencia, break con café y golosina, guías de trabajo y kit
+completo profesional para aproximadamente 30 aplicaciones </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

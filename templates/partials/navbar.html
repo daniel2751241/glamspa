@@ -1,0 +1,66 @@
+{% load static %}
+<nav class="navbar is-primary is-spaced" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <object data="{% static 'images/logo_glam.svg' %}"
+          style="width: 150px; max-height: 128px; pointer-events: none;"></object>
+      </a>
+
+      <a @click="menu = !menu" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu is-gothampro" :class="{'is-active': menu}">
+      <div class="navbar-end">
+        <a class="navbar-item" href="/">Inicio</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Servicios
+          </a>
+          <div class="navbar-dropdown is-sans-regular">
+            <a  href="/servicios/diseno-de-cejas-con-cera" class="navbar-item">Cejas</a>
+            <a href="/servicios/lifting-pestanas" class="navbar-item">Pestañas</a>
+            <a href="/servicios/esmaltado-semipermanente" class="navbar-item">Manicure</a>
+            <a  href="/servicios/pedicure-tradicional" class="navbar-item">Pedicure</a>
+            <a href="/servicios/rostro-completo-cera" class="navbar-item">Depilación Facial</a>
+            <a  href="/servicios/depilacion-corporal" class="navbar-item">Depilación Corporal</a>
+            <a href="/servicios/manicure-chocolaterapia" class="navbar-item">Spa de
+              manos</a>
+            <a href="/servicios/pedicure-chocolaterapia" class="navbar-item">Spa de pies</a>
+
+            <a href="/seminarios/micropigmentacion-completa"
+              class="navbar-item">Seminarios</a>
+          </div>
+        </div>     
+        
+        <a href="{% url 'sedes' %}" class="navbar-item">Sedes</a>
+        
+
+        <a class="navbar-item" href="{% url 'nosotros' %}">Nosotros</a>
+        <a class="navbar-item" href="{% url 'contacto' %}">Contactenos</a>
+        <a class="navbar-item" href="{% url 'garantias' %}">Garantías</a>
+        <a class="navbar-item" href="https://wa.me/573502350616?text=Hola,%20buenos%20días%20estoy%20interesado(a)%20en%20contactarlos">
+            <span class="icon">
+              <i class="fab fa-2x fa-whatsapp"></i>
+            </span>
+        </a>
+        <a class="navbar-item" href="https://instagram.com/glamspabogota">
+            <span class="icon">
+              <i class="fab fa-2x fa-instagram"></i>
+            </span>
+        </a>
+        <a class="navbar-item" href="https://facebook.com/glamspabogota">
+          <span class="icon">
+            <i class="fab fa-2x fa-facebook"></i>
+          </span>
+        </a>
+      </div>
+
+      
+    </div>
+  </div>
+</nav>

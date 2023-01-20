@@ -1,0 +1,25 @@
+.has-bg-lightyellow {
+    background-color: #d9d1a8;
+}
+
+.has-bg-pink {
+    background-color: #ffb4d9;
+}
+
+.has-bg-lightblue {
+    background-color: #cad5cf;
+}
+
+.has-bg-gradient {
+    background: linear-gradient(to top, #cad5cf 0%, #cad5cf 50%, #d9d1a8 50%, #d9d1a8 100%);
+}
+
+.navbar {
+    background: url(/static/images/parte_1.svg) no-repeat right;
+}
+.hero.has-background-primary {
+    background: url(/static/images/parte_2.svg) no-repeat right;
+    @include mobile {
+        background: none;
+    }
+}

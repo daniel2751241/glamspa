@@ -1,0 +1,27 @@
+.footer {
+    padding: 1rem 1.5rem 1rem;
+    font-size: 0.8rem;
+    color: #343434;
+    background: url(/static/images/glam_footer.svg) no-repeat right;
+    background-color: #ffb4d9;
+    background-size: 30%;
+    a {
+        color: #343434;
+    }
+}
+.footer_1 {
+    background-color: #2c2c2c; 
+    box-shadow: 0px -16px 0px 0px #ffc83e;
+}
+.footer-copyright {
+    padding: 0;
+    background-color: #343434;
+    p {
+        font-size: 0.8rem;
+    }
+}
+.logo-footer {
+    @include mobile {
+        width: 128px;
+    }
+}

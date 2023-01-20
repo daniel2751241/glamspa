@@ -1,0 +1,101 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block styles %}
+ <style>
+.content h1.title {
+    font-family: 'GothamPro';
+}
+.content p, .content ul, .content ol {
+  font-family: 'OpenSansRegular';
+}
+ </style>
+{% endblock styles %}
+{% block content %}
+<swiper :options="swiperOptions" style="height: 100%" class="slide">
+<swiper-slide>
+  <img src="{% static 'images/slides/index/slide_1.jpg' %}" alt="Image"
+  style="" class="image">
+</swiper-slide>
+<swiper-slide>
+  <img src="{% static 'images/slides/index/slide_6.jpg' %}" alt="Image" style="" class="image">
+</swiper-slide>
+
+</swiper-slide>
+</swiper>
+
+<section class="hero has-background-primary" style="">
+  <div class="hero-body" style="background: url({% static 'images/corona.svg' %}) no-repeat">
+    <div class="container">
+       <solicitar-cita></solicitar-cita> 
+    </div>
+  </div>
+</section>
+<div class="">
+  <div class="columns is-gapless">
+    <div class="column has-bg-pink" style="position: relative;">
+      <h1 style="font-size: 5rem;" class="rotated is-gothampro
+        has-text-centered">Manicure</h1>
+    </div>
+    <div class="column is-5">
+
+      <img src="{% static 'images/servicios/individual/principal_manicure.jpg' %}"
+      alt="Cejas" class="image" style="width: 100%;">
+    </div>
+    <div class="column has-bg-gradient">
+
+    </div>
+  </div>
+</div>
+<div class="section">
+<div class="container">
+    <div class="columns">
+      <div class="column content">
+        {% block image %}
+          
+        <img class="image" src="{% static 'images/servicios/cejas/1.jpg' %}"
+        alt="Cejas">
+        {% endblock image %}
+        {% block text %}
+          
+        {% endblock text %}
+      </div>
+      <div class="column">
+      <nav class="panel panel-1">
+        <p class="panel-heading">Escoge un tratamiento</p>
+        <div class="panel-block">
+          <aside class="menu" style="width: 100%;">
+            <ul class="menu-list">
+              <!-- <li><a href="/servicios/manicure-tradicional">Manicure tradicional</a></li> -->
+              <li><a href="/servicios/manicure-semipermanente">Manicure semipermanente o color gel</a></li>
+              <!-- <li><a href="/servicios/dipping-powder">Manicure
+                semipermanente Dipping Powder</a></li> -->
+              <!-- <li><a href="/servicios/manicure-ruso">Manicure ruso (en seco)</a></li> -->
+            </ul>
+            <ul class="menu-list">
+              <li>
+                <a href="/servicios/acrilicas-esculpidas" class="">Uñas acrílicas esculpidas </a>
+              </li>
+            </ul>
+            <ul class="menu-list">
+              <!-- <li><a href="/servicios/puntas-y-estructuras">Puntas y Estructuras (Baby Boomer, Encapsulados, Etc)</a></li> -->
+              <!-- <li><a href="/servicios/unas-tips">Uñas tips</a></li> -->
+              <li><a href="/servicios/recubrimiento-acrilico">Recubrimiento acrílico</a></li>
+              <li><a href="/servicios/mantenimiento-unas">Mantenimientos uñas acrílicas</a></li>
+
+              <!-- <li><a
+                  href="/servicios/manicure-retirado-semipermanente">Retiro
+                  semipermanente</a></li> -->
+              <!-- <li><a href="/servicios/retirado-unas">Retiro uñas acrílicas</a></li> -->
+              <li><a href="/servicios/tech-gel">Uñas en gel o tech gel</a></li> 
+              <li><a href="/servicios/mantenimiento-unas-tech-gel">Mantenimiento uñas tech gel</a></li>
+              <li><a href="/servicios/recubrimiento-tech-gel">Recubrimiento tech gel</a></li>
+            </ul>
+          </aside>
+        </div>
+      </nav>
+      <solicitar-citaya></solicitar-citaya>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

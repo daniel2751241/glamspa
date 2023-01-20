@@ -1,0 +1,99 @@
+{% extends "layouts/base.html" %}
+
+{% load static %}
+
+{% block styles %}
+ <style>
+.content h1.title {
+    font-family: 'GothamPro';
+}
+.content p, .content ul, .content ol {
+  font-family: 'OpenSansRegular';
+}
+ </style>
+{% endblock styles %}
+{% block content %}
+<swiper :options="swiperOptions" style="height: 100%" class="slide">
+<swiper-slide>
+  <img src="{% static 'images/slides/index/slide_1.jpg' %}" alt="Image"
+  style="" class="image">
+</swiper-slide>
+<swiper-slide>
+  <img src="{% static 'images/slides/index/slide_6.jpg' %}" alt="Image" style="" class="image">
+</swiper-slide>
+
+</swiper-slide>
+</swiper>
+
+<section class="hero has-background-primary" style="">
+  <div class="hero-body" style="background: url({% static 'images/corona.svg' %}) no-repeat">
+    <div class="container">
+      <solicitar-cita></solicitar-cita> 
+    </div>
+  </div>
+</section>
+<div class="">
+  <div class="columns is-gapless">
+    <div class="column has-bg-pink" style="position: relative;">
+      <h1 style="font-size: 5rem;" class="rotated is-gothampro
+        has-text-centered">Pestañas</h1>
+    </div>
+    <div class="column is-5">
+
+      <img src="{% static 'images/servicios/individual/pestanas.jpg' %}"
+      alt="Cejas" class="image" style="width: 100%;">
+    </div>
+    <div class="column has-bg-gradient">
+
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column content">
+        {% block image %}
+
+        <img class="image" src="{% static 'images/servicios/cejas/1.jpg' %}"
+                           alt="Cejas">
+        {% endblock image %}
+        {% block text %}
+
+        {% endblock text %}
+      </div>
+      <div class="column">
+        <nav class="panel panel-1">
+          <p class="panel-heading">Escoge un tratamiento</p>
+          <div class="panel-block">
+            <aside class="menu" style="width: 100%;">
+              <ul class="menu-list">
+                <li><a href="/servicios/lifting-pestanas">Lifting de pestañas </a></li>
+                <!-- <li><a href="/servicios/pestanas-punto-punto">Pestañas punto a punto </a></li> -->
+              </ul>
+              <ul class="menu-list">
+                <li>
+                  <a class="is-active" href="/servicios/extension-pestanas">Extensión de pestañas </a>
+                  <ul>
+                    <li><a href="/servicios/clasica-efecto-pestanina">Extensión clásica efecto pestañina </a></li>
+                    <li><a href="/servicios/extension-tipo-seda">Extensión tipo seda</a></li>
+                    <li><a href="/servicios/volumen-ruso">Volumen ruso</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="menu-list">
+                <li>
+                  <a class="" href="/servicios/retoque-pestanas">Retoque de pestañas</a>
+                </li>
+              </ul>
+              <ul class="menu-list">
+                <li><a href="/servicios/retiro-extension-pestanas">Retiro de extensión de pestañas </a></li>
+              </ul>
+            </aside>
+          </div>
+        </nav>
+        <solicitar-citaya></solicitar-citaya>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
